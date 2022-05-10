@@ -26,11 +26,11 @@ body {
 
 #panel {
   width: 375px;
-  margin: 9rem auto;
+  margin: 10rem auto 0;
   height: auto;
   background-color: var(--dark-Blue);
   padding: 1.5rem;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .star {
@@ -129,6 +129,7 @@ h2 {
 }
 
 .attribution {
+  margin-top: 2rem;
   font-size: 0.9rem;
   text-align: center;
 }
