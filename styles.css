@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-Grey: hsl(217, 12%, 63%);
+  --medium-Grey: hsl(216, 12%, 54%);
+  --dark-Blue: hsl(213, 19%, 18%);
+  --very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-Dark-Blue);
+}
+
+#panel {
+  width: 375px;
+  margin: 9rem auto;
+  height: auto;
+  background-color: var(--dark-Blue);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.star {
+  background-color: hsla(213, 20%, 22%, 0.493);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.para {
+  color: var(--light-Grey);
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1rem 0;
+}
+
+.rating {
+  background-color: hsla(213, 20%, 22%, 0.493);
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  color: var(--light-Grey);
+  font-size: 1rem;
+  opacity: 0.9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+button {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--Orange);
+  margin-top: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1.5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.rating:hover,
+button:hover {
+  transform: scale(1.06);
+}
+
+.rating:hover {
+  background-color: var(--light-Grey);
+  color: var(--white);
+}
+
+button:active {
+  transform: scale(0.94);
+}
+
+.rating.active {
+  background-color: var(--Orange);
+  color: var(--white);
+}
+
+.thank__you {
+  text-align: center;
+}
+
+.thank__you img {
+  margin: 1rem 0;
+}
+
+small {
+  background-color: hsla(213, 20%, 22%, 0.493);
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  color: var(--Orange);
+}
+
+h2 {
+  color: var(--white);
+  margin: 2rem 0 1rem;
+}
+
+.attribution {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(227, 26%, 83%);
+}
