@@ -3,20 +3,22 @@ const submit = document.querySelector('#btn');
 const panel = document.querySelector('#panel');
 const rating = document.querySelector('.ratings');
 
-const selectedRating = '5';
+let selectedRating;
 
 rating.addEventListener('click', (e) => {
-  console.log('log');
   if (e.target.parentNode.classList.contains('rating')) {
     removeActive();
     e.target.parentNode.classList.add('active');
+    selectedRating = e.target.innerHTML;
   }
   if (e.target.classList.contains('rating')) {
     removeActive();
     e.target.classList.add('active');
+    selectedRating = e.target.innerHTML;
   }
 });
 
+console.log(selectedRating);
 submit.addEventListener('click', (e) => {
   panel.innerHTML = `
   <div class=" thank__you">
