@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
   --Orange: hsl(25, 97%, 53%);
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   background-color: var(--very-Dark-Blue);
 }
 
@@ -71,7 +71,7 @@ body {
   opacity: 0.9;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 button {
@@ -86,7 +86,7 @@ button {
   font-weight: 700;
   color: var(--white);
   letter-spacing: 1.5px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .rating:hover,
